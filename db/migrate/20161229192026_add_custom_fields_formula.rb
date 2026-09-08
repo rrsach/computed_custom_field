@@ -1,4 +1,4 @@
-class AddCustomFieldsFormula < PLUGIN_MIGRATION_CLASS
+class AddCustomFieldsFormula < ActiveRecord::Migration[6.1]
   def up
     add_column :custom_fields, :formula, :text
   end
